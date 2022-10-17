@@ -40,7 +40,7 @@ export default {
             height: 26px;
             position: relative;
 
-            .progress__item-line {
+            &-line {
                 position: absolute;
                 bottom: 0;
                 width: 10px;
@@ -52,12 +52,12 @@ export default {
                 }
             }
 
-            .progress__item-number {
+            &-number {
                 font-family: "kinopoisk-semibold";
                 font-size: 18px;
             }
 
-            .progress__item-text {
+            &-text {
                 font-family: "kinopoisk-regular";
                 font-size: 16px;
                 margin-left: 10px;
