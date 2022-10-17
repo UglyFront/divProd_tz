@@ -16,10 +16,20 @@
             >
                 <img src="../../assets/img/arrow-slider.png" alt="">
             </div>
-            <div class="slider__wrapper__slide slide">
-                <img class = "cloud-down" src="../../assets/img/cloud-down.png" alt="">
-                <img class="slide__img" src="../../assets/img/person.png" alt="">
-                <p class="slide__text">{{$store.state.items[activeSlide].text}}</p>
+            <div class="slide">
+                <img 
+                    class = "cloud-down" 
+                    src="../../assets/img/cloud-down.png" 
+                    alt=""
+                >
+                <img 
+                    class="slide__img" 
+                    src="../../assets/img/person.png" 
+                    alt=""
+                >
+                <p class="slide__text">
+                    {{$store.state.items[activeSlide].text}}
+                </p>
             </div>
         </div>
     </div>

@@ -1,21 +1,21 @@
 <template>
-    <div class="sidebar__progress">
-        <div class="sidebar__progress__item">
-            <div class="progress__item__line progress__item__line_min"></div>
+    <div class="progress">
+        <div class="progress__item">
+            <div class="progress__item-line progress__item-line_min"></div>
         </div>
 
-        <div class="sidebar__progress__item">
-            <div class="progress__item__line"></div>
+        <div class="progress__item">
+            <div class="progress__item-line"></div>
         </div>
 
-        <div class="sidebar__progress__item sidebar__progress__item_active">
-            <span class="progress__item__number">03</span>
-            <span class="progress__item__text">Подсказки</span>
-            <div class="progress__item__line"></div>
+        <div class="progress__item progress__item_active">
+            <span class="progress__item-number">03</span>
+            <span class="progress__item-text">Подсказки</span>
+            <div class="progress__item-line"></div>
         </div>
 
-        <div class="sidebar__progress__item">
-            <div class="progress__item__line"></div>
+        <div class="progress__item">
+            <div class="progress__item-line"></div>
         </div>
     </div>
 </template>
@@ -27,7 +27,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-    .sidebar__progress {
+    .progress {
         width: 152px;
         height: 160px;
         display: flex;
@@ -40,7 +40,7 @@ export default {
             height: 26px;
             position: relative;
 
-            .progress__item__line {
+            .progress__item-line {
                 position: absolute;
                 bottom: 0;
                 width: 10px;
@@ -52,19 +52,19 @@ export default {
                 }
             }
 
-            .progress__item__number {
+            .progress__item-number {
                 font-family: "kinopoisk-semibold";
                 font-size: 18px;
             }
 
-            .progress__item__text {
+            .progress__item-text {
                 font-family: "kinopoisk-regular";
                 font-size: 16px;
                 margin-left: 10px;
             }
 
             &_active {
-                .progress__item__line {
+                .progress__item-line {
                     width: 100%;
                     height: 2px;
                 }
@@ -74,7 +74,7 @@ export default {
 
 
     @media screen and (max-width: 1000px) {
-        .sidebar__progress {
+        .progress {
             display: none;
         }
     }
